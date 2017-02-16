@@ -63,6 +63,11 @@ a {
     overflow: hidden; }
     .header__breadcrumbs a:hover {
       text-decoration: underline; }
+  .header #homelink {
+    background: url("icons/home.png") no-repeat;
+    display: block;
+    height: 16px;
+    width: 16px; }
 
 .files {
   margin-top: 1.3rem; }
@@ -122,4 +127,8 @@ a {
   padding-bottom: 1.0rem;
   text-align: center; }
   .footer a {
-    cursor: default; }
+    cursor: default;
+    background: url("favicons/logo28x28x.png") no-repeat;
+    display: inline-block;
+    height: 28px;
+    width: 28px; }
