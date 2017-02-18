@@ -1,0 +1,43 @@
+#
+# SIMPLE - apache directory listing theme
+#
+# (c) 2017 Miroslav Pokorný
+# https://miroslavpokorny.com/simple-apache-directory-listing-theme
+#
+
+Options +Indexes
+IndexOptions +FancyIndexing +VersionSort +HTMLTable +FoldersFirst +IconsAreLinks +IgnoreCase +SuppressDescription +XHTML +IconWidth=16 +IconHeight=16 +NameWidth=*
+HeaderName /simple/header.html
+ReadmeName /simple/footer.html
+IndexStyleSheet /simple/style.css
+IndexIgnore .htaccess /simple
+IndexHeadInsert '<meta name="viewport" content="width=device-width, initial-scale=1" /><meta charset="utf-8" /><link rel="apple-touch-icon" sizes="180x180" href="/simple/favicons/apple-touch-icon.png" /><link rel="icon" type="image/png" href="/simple/favicons/favicon-32x32.png" sizes="32x32" /><link rel="icon" type="image/png" href="/simple/favicons/favicon-16x16.png" sizes="16x16" /><link rel="manifest" href="/simple/favicons/manifest.json" /><link rel="mask-icon" href="/simple/favicons/safari-pinned-tab.svg" color="#b33333" /><link rel="shortcut icon" href="/simple/favicons/favicon.ico" /><meta name="msapplication-config" content="/simple/favicons/browserconfig.xml" /><meta name="theme-color" content="#ffffff" /><link rel="stylesheet" href="/simple/style.css" />'
+IndexOrderDefault Ascending Name
+DefaultIcon /simple/icons/document.png
+AddIcon /simple/icons/arrow-curve-180.png ..
+AddIcon /simple/icons/folder.png ^^DIRECTORY^^
+AddIcon /simple/icons/document-text.png README INSTALL
+AddIcon /simple/icons/application.png .exe .app
+AddIcon /simple/icons/box.png .tar .tgz .tbz .tbz2 .bundle .rar .z .gz .zip .7z
+AddIcon /simple/icons/database.png .db .sqlite .dat
+AddIcon /simple/icons/disc.png .iso .image
+AddIcon /simple/icons/document-access.png .ade .adp .adn .accdb .accdr .accdt .mdb .mda .mdn .mdt .mdw .mdf .mde .accde .mam .maq .mar .mat .maf
+AddIcon /simple/icons/document-binary.png .bin .hqx .uu
+AddIcon /simple/icons/document-code.png .html .htm .htx .htmls .dhtml .phtml .shtml .inc .ssi .c .cc .css .h .rb .js .rb .pl .py .sh .shar .csh .ksh .tcl .as
+AddIcon /simple/icons/document-excel.png .xls .xla .xlb .xlc .xld .xlk .xll .xlm .xlt .xlv .xlw .xlsx .xlsm .xlsb .xltm .xlam
+AddIcon /simple/icons/document-excel-csv.png .csv
+AddIcon /simple/icons/document-flash.png .fla .flv .swf .swt .swc
+AddIcon /simple/icons/document-illustrator.png .ai .eps .epsf .epsi
+AddIcon /simple/icons/document-number.png .conf
+AddIcon /simple/icons/document-pdf.png .pdf
+AddIcon /simple/icons/document-pdf-text.png .ps
+AddIcon /simple/icons/document-photoshop.png .psd
+AddIcon /simple/icons/document-php.png .php .phps .php5 .php3 .php4 .phtm
+AddIcon /simple/icons/document-powerpoint.png .ppt .pptx .ppz .pot .pwz .ppa .pps .pow
+AddIcon /simple/icons/document-tex.png .tex .dvi
+AddIcon /simple/icons/document-text.png .txt
+AddIcon /simple/icons/document-word.png .docx .docm .doc .dotx .dotm .dot .rtf
+AddIconByType (IMG,/simple/icons/image.png) image/*
+AddIconByType (SND,/simple/icons/music.png) audio/*
+AddIconByType (TXT,/simple/icons/document-text.png) text/*
+AddIconByType (VID,/simple/icons/film.png) video/*
