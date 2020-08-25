@@ -1,6 +1,8 @@
 SIMPLE: Apache Directory Listing Theme
 ======================================
 
+[https://miroslavpokorny.com/simple-apache-directory-listing-theme/](https://miroslavpokorny.com/simple-apache-directory-listing-theme/)
+
 This theme turns that ugly default file listing by autoindex mod in Apache into this:
 
 ![](https://fuchcz.github.io/simple-apache-directory-listing-theme/images/simple-screenshot.jpg)
